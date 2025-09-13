@@ -1,0 +1,511 @@
+/* ============ VARIABLES Y RESET ============ */
+:root {
+  --color-primary: #ff553a;
+  --color-dark: #2c3e50;
+  --color-light: #f5f5f5;
+  --color-gray: #6c757d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-dark);
+  line-height: 1.6;
+  background-color: var(--color-light);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: var(--color-gray);
+}
+
+/* ============ BOTONES ============ */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e54c30;
+}
+
+.btn-card {
+  background-color: var(--color-primary);
+  color: white;
+  width: 100%;
+}
+
+.btn-card:hover {
+  background-color: #e54c30;
+}
+
+.btn-form {
+  background-color: var(--color-dark);
+  color: white;
+  width: 100%;
+}
+
+.btn-form:hover {
+  background-color: #1a242f;
+}
+
+/* ============ HEADER Y NAVEGACIÓN ============ */
+.main-header {
+  background-color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--color-primary);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons i {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  cursor: pointer;
+  color: var(--color-dark);
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============ BÚSQUEDA ============ */
+.search-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-dark);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.search-container.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.search-container input {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* ============ HERO ============ */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.levapan.com/wp-content/uploads/2024/04/Tipos_de_panes_colombianos.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ============ PRODUCTOS ============ */
+.featured-models {
+  padding: 4rem 5%;
+  background-color: white;
+}
+
+.model-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 3rem;
+}
+
+.tab-item {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-item:hover,
+.tab-item.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.car-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-info p {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.car-description {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ============ CONTACTO ============ */
+.contact-section {
+  background-color: var(--color-primary);
+  padding: 4rem 5%;
+  color: white;
+}
+
+.contact-section h2 {
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.info-item p {
+  color: white;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* ============ FOOTER ============ */
+.main-footer {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 4rem 5% 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-social p {
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
+}
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: var(--color-primary);
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #e54c30;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .header-icons {
+    order: 2;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}

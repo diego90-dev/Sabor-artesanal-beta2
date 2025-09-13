@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor Artesanal - Ofertas para Cumpleaños</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="/img/Logo dulces.jpg" alt="Logo de Sabor Artesanal" />
+      <span>Sabor Artesanal</span>
+    </div>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="/paginas/productos.html">Productos</a></li>
+        <li><a href="#contact-section">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-container" id="search-container">
+      <input type="text" placeholder="Buscar productos..." />
+    </div>
+    <div class="header-icons">
+      <i class="fas fa-search" id="search-icon"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Ofertas para Cumpleaños</h1>
+        <p>Haz que tu celebración sea inolvidable con nuestros combos artesanales de mini dulces y salados.</p>
+        <a href="#servicios" class="btn btn-primary">VER COMBOS</a>
+      </div>
+    </section>
+
+    <section class="featured-models" id="servicios">
+      <h2>Servicios Especiales</h2>
+      <div class="model-tabs">
+        <a href="#mini-donas" class="tab-item active">MINI DONAS</a>
+        <a href="#mini-pavitas" class="tab-item">MINI PAVITAS</a>
+        <a href="#mini-tequenos" class="tab-item">MINI TEQUEÑOS</a>
+        <a href="#combo-cumpleanos" class="tab-item">COMBO CUMPLEAÑOS</a>
+      </div>
+
+     <div class="car-cards-container">
+  <div class="car-card" id="mini-donas">
+    <img src="ruta/de/la/imagen-mini-donas.jpg" alt="Mini Donas" />
+    <div class="card-info">
+      <h3>Mini Donas</h3>
+      <p>$5.00</p>
+      <p class="car-description">Donas pequeñas decoradas para fiestas, suaves y deliciosas.</p>
+      <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+    </div>
+  </div>
+
+  <div class="car-card" id="mini-pavitas">
+    <img src="ruta/de/la/imagen-mini-pavitas.jpg" alt="Mini Pavitas" />
+    <div class="card-info">
+      <h3>Mini Pavitas</h3>
+      <p>$6.00</p>
+      <p class="car-description">Mini pavitas rellenas de crema pastelera, perfectas para celebraciones.</p>
+      <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+    </div>
+  </div>
+
+  <div class="car-card" id="mini-tequenos">
+    <img src="ruta/de/la/imagen-tequenos.jpg" alt="Mini Tequeños" />
+    <div class="card-info">
+      <h3>Mini Tequeños</h3>
+      <p>$4.50</p>
+      <p class="car-description">Clásicos tequeños en versión mini, rellenos de queso blanco.</p>
+      <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+    </div>
+  </div>
+
+  <div class="car-card" id="combo-cumpleanos">
+    <img src="ruta/de/la/imagen-combo-cumpleanos.jpg" alt="Combo Cumpleaños" />
+    <div class="card-info">
+      <h3>Combo Cumpleaños</h3>
+      <p>$14.00</p>
+      <p class="car-description">Incluye mini donas, mini pavitas y mini tequeños. Ideal para 10 personas.</p>
+      <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+    </div>
+  </div>
+</div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <p style="font-size: 1rem; color: var(--color-gray); max-width: 700px; margin: 0 auto;">
+          ¿Tienes una idea especial para tu celebración? Puedes especificar qué combinación prefieres en tu pedido. Personalizamos combos según tus gustos y el número de invitados.
+        </p>
+        <a href="#contact-section" class="btn btn-primary" style="margin-top: 1.5rem;">ESPECIFICAR MI COMBO</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+      <h2>Haz tu pedido</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>Reluciente via Cubiro kilometro 16</p></div>
+          <div class="info-item"><i class="fas fa-phone"></i><p>+58 424 549 74 14</p></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><p>diego303018842@gmail.com</p></div>
+          <div class="info-item"><i class="fas fa-clock"></i><p>Lunes a Sábado: 8:00 am - 8:00 pm</p></div>
+        </div>
+
+          <div class="contact-form-container">
+  <form class="contact-form" action="/php/send-email.php" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="text" name="subject" placeholder="Combo deseado o consulta" />
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn btn-form">ENVIAR PEDIDO</button>
+  </form>
+</div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+   <footer class="main-footer">
+  <div class="footer-grid">
+    <div class="footer-logo-social">
+      <div class="footer-logo">
+        <img src="/img/Logo dulces.jpg" alt="Logo Sabor Artesanal" />
+      </div>
+      <p>Elaboramos los mejores dulces y panes de forma tradicional, ahora también para tus celebraciones.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Productos</h4>
+      <ul>
+        <li><a href="#mini-donas">Mini Donas</a></li>
+        <li><a href="#mini-pavitas">Mini Pavitas</a></li>
+        <li><a href="#mini-tequenos">Mini Tequeños</a></li>
+        <li><a href="#combo-cumpleanos">Combos Cumpleaños</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Pedidos Personalizados</a></li>
+        <li><a href="#">Catering para Eventos</a></li>
+        <li><a href="#">Entrega a Domicilio</a></li>
+        <li><a href="#">Consultas por WhatsApp</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column newsletter">
+      <h4>Newsletter</h4>
+      <p>Suscríbete y recibe nuestras ofertas y nuevos productos.</p>
+      <form>
+        <input type="email" placeholder="Tu Email" />
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Sabor Artesanal. Todos los derechos reservados.</p>
+  </div>
+</footer>
+  </footer>
+
+  <script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mainNav = document.getElementById('main-nav');
+    const searchIcon = document.getElementById('search-icon');
+    const searchContainer = document.getElementById('search-container');
+    const searchInput = searchContainer.querySelector('input');
+    const productCards = document.querySelectorAll('.car-card');
+
+    hamburgerMenu.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+      searchContainer.classList.remove('active');
+    });
+
+    searchIcon.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+      mainNav.classList.remove('active');
+      if (searchContainer.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const searchQuery = e.target.value.toLowerCase();
+      productCards.forEach(card => {
+        const cardText = card.textContent.toLowerCase();
+        card.classList.toggle('hidden', !cardText.includes(searchQuery));
+      });
+    });
+  </script>
+
+</body>
+</html>

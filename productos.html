@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Artesanal - Dulces y Panes Caseros</title>
+    <link rel="stylesheet" href="/css/productos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="/img/Logo dulces.jpg" alt="Logo de Sabor Artesanal" />
+            <span>Sabor Artesanal</span>
+        </div>
+        <button class="hamburger-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/paginas/servicios.html">Servicios</a></li>
+                <li><a href="/paginas/productos.html">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-container" id="search-container">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+        <div class="header-icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <h1>El sabor de lo hecho en casa</h1>
+                <p>Descubre nuestra deliciosa selección de dulces y panes artesanales, hechos con amor.</p>
+                <a href="#productos" class="btn btn-primary">VER PRODUCTOS</a>
+            </div>
+        </section>
+
+        <section class="featured-models" id="productos">
+            <h2>Catálogo de Productos</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+                Todos nuestros productos están disponibles al <strong>detal</strong> y <strong>al mayor</strong>.
+            </p>
+
+            <div class="model-tabs" id="category-tabs">
+                <a href="#" class="tab-item active" data-category="todos">TODOS</a>
+                <a href="#" class="tab-item" data-category="conservas">CONSERVAS</a>
+                <a href="#" class="tab-item" data-category="panes">PANES</a>
+                <a href="#" class="tab-item" data-category="donas">DONAS Y MÁS</a>
+            </div>
+
+            <div class="car-cards-container">
+                <div class="car-card conserva" data-category="conservas">
+                    <img src="ruta/de/la/imagen-dulce-leche.jpg" alt="Conserva de Leche" />
+                    <div class="card-info">
+                        <h3>Conserva de Leche</h3>
+                        <p>$2.50</p>
+                        <p class="car-description">Dulce de leche casero, cremoso y tradicional.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card conserva" data-category="conservas">
+                    <img src="ruta/de/la/imagen-conserva-coco.jpg" alt="Conserva de Coco" />
+                    <div class="card-info">
+                        <h3>Conserva de Coco</h3>
+                        <p>$2.00</p>
+                        <p class="car-description">Coco rallado con panela, clásico y delicioso.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card conserva" data-category="conservas">
+                    <img src="ruta/de/la/imagen-leche-coco.jpg" alt="Conserva de Leche con Coco" />
+                    <div class="card-info">
+                        <h3>Conserva de Leche con Coco</h3>
+                        <p>$2.80</p>
+                        <p class="car-description">Combinación perfecta de leche y coco rallado.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card conserva" data-category="conservas">
+                    <img src="ruta/de/la/imagen-coco-negro.jpg" alt="Conserva de Coco Negra" />
+                    <div class="card-info">
+                        <h3>Conserva de Coco Negra</h3>
+                        <p>$2.00</p>
+                        <p class="car-description">Coco caramelizado oscuro, con sabor intenso.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card conserva" data-category="conservas">
+                    <img src="ruta/de/la/imagen-coco-blanco.jpg" alt="Conserva de Coco Blanca" />
+                    <div class="card-info">
+                        <h3>Conserva de Coco Blanca</h3>
+                        <p>$2.00</p>
+                        <p class="car-description">Coco claro y suave, con textura delicada.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+
+                <div class="car-card panes" data-category="panes">
+                    <img src="ruta/de/la/imagen-pan-guayaba.jpg" alt="Pan de Guayaba" />
+                    <div class="card-info">
+                        <h3>Pan de Guayaba</h3>
+                        <p>$3.00</p>
+                        <p class="car-description">Pan suave relleno de mermelada de guayaba artesanal.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card panes" data-category="panes">
+                    <img src="ruta/de/la/imagen-pan-guayaba-pequeno.jpg" alt="Mini Pan de Guayaba" />
+                    <div class="card-info">
+                        <h3>Pan de Guayaba Pequeño</h3>
+                        <p>$1.50</p>
+                        <p class="car-description">Ideal para una porción individual. Hecho con la misma receta.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card panes" data-category="panes">
+                    <img src="ruta/de/la/imagen-pan-guayaba-combo.jpg" alt="Combo Panes de Guayaba" />
+                    <div class="card-info">
+                        <h3>Combo Panes de Guayaba</h3>
+                        <p>$5.00</p>
+                        <p class="car-description">Incluye varios panes de guayaba para compartir o congelar.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+
+                <div class="car-card donas" data-category="donas">
+                    <img src="ruta/de/la/imagen-donas.jpg" alt="Donas" />
+                    <div class="card-info">
+                        <h3>Donas y Mini Donas</h3>
+                        <p>$1.00 - $3.00</p>
+                        <p class="car-description">Tiernas donas cubiertas de azúcar, chocolate o glaseado. ¡También en versión mini!</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card donas" data-category="donas">
+                    <img src="ruta/de/la/imagen-pavitas.jpg" alt="Pavitas" />
+                    <div class="card-info">
+                        <h3>Pavitas</h3>
+                        <p>$2.00</p>
+                        <p class="car-description">Deliciosos panes dulces rellenos, perfectos para el desayuno o la merienda.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+                <div class="car-card donas" data-category="donas">
+                    <img src="ruta/de/la/imagen-mini-pavitas.jpg" alt="Mini Pavitas" />
+                    <div class="card-info">
+                        <h3>Mini Pavitas</h3>
+                        <p>$1.00</p>
+                        <p class="car-description">Una versión pequeña de nuestro pan dulce, ideal para compartir en fiestas.</p>
+                        <a href="#" class="btn btn-card">AGREGAR AL CARITO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <h2>Haz tu pedido</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>Reluciente via Cubiro kilometro 16</p></div>
+                    <div class="info-item"><i class="fas fa-phone"></i><p>+58 424 549 74 14</p></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><p>diego303018842@gmail.com</p></div>
+                    <div class="info-item"><i class="fas fa-clock"></i><p>Lunes a Sábado: 8:00 am - 8:00 pm</p></div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="send-mail.php" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <input type="text" name="subject" placeholder="Producto o consulta" />
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn-form">ENVIAR PEDIDO</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-logo-social">
+                <div class="footer-logo">
+                    <img src="/img/Logo dulces.jpg" alt="Logo Sabor Artesanal">
+                </div>
+                <p>Elaboramos los mejores dulces y panes de forma tradicional, ahora también para tus celebraciones.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#productos">Todos los Productos</a></li>
+                    <li><a href="#conservas">Conservas</a></li>
+                    <li><a href="#panes">Panes</a></li>
+                    <li><a href="#donas">Donas y Más</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Pedidos Personalizados</a></li>
+                    <li><a href="#servicios">Catering</a></li>
+                    <li><a href="#servicios">Entrega a Domicilio</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column newsletter">
+                <h4>Newsletter</h4>
+                <p>Suscríbete y recibe nuestras ofertas y nuevos productos.</p>
+                <form>
+                    <input type="email" placeholder="Tu Email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sabor Artesanal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const mainNav = document.getElementById('main-nav');
+            const searchIcon = document.getElementById('search-icon');
+            const searchContainer = document.getElementById('search-container');
+            const searchInput = searchContainer.querySelector('input');
+            const productCards = document.querySelectorAll('.car-card');
+            const categoryTabs = document.getElementById('category-tabs');
+
+            // Funcionalidad del menú de hamburguesa
+            hamburgerMenu.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                searchContainer.classList.remove('active');
+            });
+
+            // Funcionalidad del ícono de búsqueda
+            searchIcon.addEventListener('click', () => {
+                searchContainer.classList.toggle('active');
+                mainNav.classList.remove('active');
+                if (searchContainer.classList.contains('active')) {
+                    searchInput.focus();
+                }
+            });
+
+            // Funcionalidad de filtro de búsqueda en tiempo real
+            searchInput.addEventListener('input', (e) => {
+                const searchQuery = e.target.value.toLowerCase();
+                productCards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    card.classList.toggle('hidden', !cardText.includes(searchQuery));
+                });
+            });
+
+            // Funcionalidad de filtro por categorías
+            categoryTabs.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = e.target;
+                if (target.matches('.tab-item')) {
+                    document.querySelectorAll('.tab-item').forEach(tab => tab.classList.remove('active'));
+                    target.classList.add('active');
+
+                    const category = target.dataset.category;
+
+                    productCards.forEach(card => {
+                        if (category === 'todos' || card.dataset.category === category) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

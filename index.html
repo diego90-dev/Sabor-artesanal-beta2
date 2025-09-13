@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Artesanal - Dulces y Panes Caseros</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="/img/Logo dulces.jpg" alt="Logo de Sabor Artesanal">
+      <span>Sabor Artesanal</span>
+    </div>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="/paginas/servicios.html">Servicios</a></li>
+        <li><a href="/paginas/productos.html">Productos</a></li>
+        <li><a href="#pan-guayaba">Panes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-container" id="search-container">
+      <input type="text" placeholder="Buscar productos...">
+    </div>
+    <div class="header-icons">
+      <i class="fas fa-search" id="search-icon"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" style="background-image: url('https://www.levapan.com/wp-content/uploads/2024/04/Tipos_de_panes_colombianos.jpeg');">
+      <div class="hero-content">
+        <h1>El sabor de lo hecho en casa</h1>
+        <p>Descubre nuestra deliciosa selección de dulces y panes artesanales, hechos con amor.</p>
+        <a href="#productos" class="btn btn-primary">VER PRODUCTOS</a>
+      </div>
+    </section>
+
+    <section class="featured-models" id="productos">
+      <h2>Nuestros Productos Destacados</h2>
+      <div class="model-tabs">
+        <a href="#conserva-leche" class="tab-item">CONSERVA DE LECHE</a>
+        <a href="#pan-guayaba" class="tab-item">PAN DE GUAYABA</a>
+        <a href="#conserva-coco" class="tab-item">CONSERVA DE COCO</a>
+      </div>
+
+      <div class="car-cards-container">
+        <div class="car-card" id="conserva-leche">
+          <img src="/img/conserva de leche pequeña.jpg" alt="Dulce de Leche">
+          <div class="card-info">
+            <h3>Conserva de Leche</h3>
+            <p>$2.50</p>
+            <p class="car-description">Dulce de leche casero, cremoso y con un sabor que te recordará a la abuela.</p>
+            <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+          </div>
+        </div>
+
+        <div class="car-card" id="pan-guayaba">
+          <img src="/img/pan de guayaba.webp" alt="Pan de Guayaba">
+          <div class="card-info">
+            <h3>Pan de Guayaba</h3>
+            <p>$3.00</p>
+            <p class="car-description">Pan suave y esponjoso, relleno de una deliciosa y fresca mermelada de guayaba.</p>
+            <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+          </div>
+        </div>
+
+        <div class="car-card" id="conserva-coco">
+          <img src="/img/conserva-de-coco_800x534 (1).webp" alt="Conserva de Coco">
+          <div class="card-info">
+            <h3>Conserva de Coco</h3>
+            <p>$2.00</p>
+            <p class="car-description">Elaborada con coco rallado y panela, un clásico de nuestra tierra.</p>
+            <a href="#" class="btn btn-card">AGREGAR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <h2>Haz tu pedido</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>Reluciente via Cubiro kilometro 16</p></div>
+          <div class="info-item"><i class="fas fa-phone"></i><p>+58 424 549 74 14</p></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><p>diego303018842@gmail.com</p></div>
+          <div class="info-item"><i class="fas fa-clock"></i><p>Lunes a Sábado: 8:00 am - 8:00 pm</p></div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" action="send-mail.php" method="POST">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Pedido o consulta">
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn btn-form">ENVIAR PEDIDO</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-grid">
+      <div class="footer-logo-social">
+        <div class="footer-logo">
+          <img src="/img/Logo dulces.jpg" alt="Logo Sabor Artesanal">
+        </div>
+        <p>Elaboramos los mejores dulces y panes de forma tradicional...</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#conserva-coco">Conservas de Coco</a></li>
+          <li><a href="#conserva-leche">Conservas de Leche</a></li>
+          <li><a href="#pan-guayaba">Panes</a></li>
+          <li><a href="#productos">Especiales del Día</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Pedidos Personalizados</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Entrega a Domicilio</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h4>Newsletter</h4>
+        <p>Suscríbete y recibe nuestras ofertas y nuevos productos.</p>
+        <form>
+          <input type="email" placeholder="Tu Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Sabor Artesanal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+    <script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mainNav = document.getElementById('main-nav');
+    const searchIcon = document.getElementById('search-icon');
+    const searchContainer = document.getElementById('search-container');      
+    const searchInput = searchContainer.querySelector('input');
+    const productCards = document.querySelectorAll('.car-card');
+
+    // Funcionalidad del menú de hamburguesa
+    hamburgerMenu.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+      searchContainer.classList.remove('active');
+    });
+
+    // Funcionalidad del ícono de búsqueda
+    searchIcon.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+      mainNav.classList.remove('active');
+      if (searchContainer.classList.contains('active')) {
+        searchInput.focus(); // Enfoca el input al abrir
+      }
+    });
+
+    // Funcionalidad de filtro de búsqueda en tiempo real
+    searchInput.addEventListener('input', (e) => {
+      const searchQuery = e.target.value.toLowerCase();
+
+      productCards.forEach(card => {
+        const cardText = card.textContent.toLowerCase();
+        if (cardText.includes(searchQuery)) {
+          card.classList.remove('hidden'); // Muestra la tarjeta si coincide
+        } else {
+          card.classList.add('hidden'); // Oculta la tarjeta si no coincide
+        }
+      });
+    });
+
+    // Cierra el menú al hacer clic en un enlace
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
